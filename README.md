@@ -5,6 +5,9 @@ I am pleased to present my newest website crated as a homework during frontent d
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Explanation
+The animation below is not up to date because I'm just learning React and the interactions don't work yet. The next update of the website will make it work as shown in the video 😁
+
 ## Technologies used
 - HTML
 - CSS
