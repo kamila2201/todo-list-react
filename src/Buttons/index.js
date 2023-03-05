@@ -1,7 +1,7 @@
 import "./style.css";
 
-const Buttons = (props) => {
-  if (props.tasks.lenght === 0) {
+const Buttons = ({tasks}) => {
+  if (tasks.length === 0) {
     return null;
   }
 
