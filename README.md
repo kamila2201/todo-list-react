@@ -2,7 +2,23 @@
 
 ## Description
 
-This website is very useful when you want to create to-do list. You can add tasks to the list, mark them as done or delete them.
+This website is very useful when you want to create to-do list. You can add tasks to the list, mark them as done or delete them. Additionally, the tasks you enter are saved, so you can return to the list you created at any time.
+
+## Technologies used
+
+- React
+- HTML
+- CSS with BEM convention
+- JavaScript
+- MediaQueries
+- Grid
+- Flex
+- Immutability
+
+## Check it out!
+
+https://kamila2201.github.io/todo-list-react/
+![Animation showing how the task list works](animation.gif)
 
 ## Available Scripts
 
