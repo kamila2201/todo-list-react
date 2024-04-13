@@ -11,10 +11,14 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: filter 0.3s;
 
     &:hover {
-        color: hsl(180, 100%, 30%);
+        filter: brightness(110%);;
+    }
+
+    &:active {
+        filter: brightness(120%);;
     }
 
     &:disabled {
