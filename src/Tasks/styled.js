@@ -32,13 +32,17 @@ export const Button = styled.button`
     height: 40px;
     border: none;
     color: #fff;
-    transition: background 0.3s;
+    transition: filter .3s;
 
     ${({$remove}) => $remove && css`
         background-color: ${({ theme }) => theme.color.red};
 
         &:hover {
-            background-color: hsl(0, 100%, 60%);
+            filter: brightness(110%);
+        }
+
+        &:active {
+            filter: brightness(120%);
         }
     `}
 
@@ -46,7 +50,11 @@ export const Button = styled.button`
         background-color: ${({ theme }) => theme.color.green};
 
         &:hover {
-            background-color: hsl(120, 100%, 30%);
+            filter: brightness(110%);
+        }
+
+        &:active {
+            filter: brightness(120%);
         }
     `}
 `;
