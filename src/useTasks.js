@@ -1,13 +1,9 @@
-import {useEffect } from 'react';
+
 import { useLocalStorageState } from './useLocalStorageState';
 
 
 export const useTasks = () => {
   const [tasks, setTasks] = useLocalStorageState("tasks", []);
-
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   const removeTask = (id) => {
     setTasks(tasks.filter(task => task.id !== id))
