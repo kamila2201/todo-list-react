@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const Button = styled.button`
     font-size: 20px;
     border: none;
-    color: teal;
+    color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
     cursor: pointer;
     transition: color 0.3s;
@@ -18,10 +18,10 @@ export const Button = styled.button`
     }
 
     &:disabled {
-        color: #bdb8b8;
+        color: ${({ theme }) => theme.color.silver};
     }
 
-    @media (max-width:768px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             flex-basis: 100%;
             margin: 10px;
     }

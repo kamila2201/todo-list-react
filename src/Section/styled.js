@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
     margin: 10px 0;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 0px 3px rgba(221, 221, 221, 1);
-    -moz-box-shadow: 0px 0px 0px 3px rgba(221, 221, 221, 1);
-    box-shadow: 0px 0px 0px 3px rgba(221, 221, 221, 1);
+    -webkit-box-shadow: 0px 0px 0px 3px ${({ theme }) => theme.color.silver};
+    -moz-box-shadow: 0px 0px 0px 3px ${({ theme }) => theme.color.silver};
+    box-shadow: 0px 0px 0px 3px ${({ theme }) => theme.color.silver};
 `;
 
 export const Header = styled.header`
@@ -16,7 +16,7 @@ export const Header = styled.header`
     align-items: center;
     padding: 20px;
 
-    @media (max-width:768px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
@@ -28,6 +28,6 @@ export const Title = styled.h2`
 `;
 
 export const Body = styled.div`
- border-top: 2px solid #ddd;
+ border-top: 2px solid ${({ theme }) => theme.color.alto};
     padding: 20px;
 `;
