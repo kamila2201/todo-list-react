@@ -7,7 +7,6 @@ const getInitialTasks = () => {
 }
 
 export const useTasks = () => {
-
   const [tasks, setTasks] = useState(getInitialTasks);
 
   useEffect(() => {
@@ -42,5 +41,11 @@ export const useTasks = () => {
     ]);
   };
 
-  return { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask };
+  return {
+    tasks,
+    removeTask,
+    toggleTaskDone,
+    setAllDone,
+    addNewTask
+  };
 }
