@@ -1,13 +1,9 @@
-import { useState, useEffect } from 'react';
+import {useEffect } from 'react';
+import { useLocalStorageState } from './useLocalStorageState';
 
-const getInitialTasks = () => {
-  const storedTasks = localStorage.getItem("tasks");
-
-  return storedTasks ? JSON.parse(storedTasks) : []
-}
 
 export const useTasks = () => {
-  const [tasks, setTasks] = useState(getInitialTasks);
+  const [tasks, setTasks] = useLocalStorageState("tasks", []);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
