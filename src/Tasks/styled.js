@@ -11,7 +11,7 @@ export const Item = styled.li`
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     padding: 10px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid ${({ theme }) => theme.color.alto};
     align-items: center;
 
     ${({hidden}) => hidden && css`
@@ -35,7 +35,7 @@ export const Button = styled.button`
     transition: background 0.3s;
 
     ${({$remove}) => $remove && css`
-        background-color: red;
+        background-color: ${({ theme }) => theme.color.red};
 
         &:hover {
             background-color: hsl(0, 100%, 60%);
@@ -43,7 +43,7 @@ export const Button = styled.button`
     `}
 
     ${({$toggleDone}) => $toggleDone && css`
-        background-color: green;
+        background-color: ${({ theme }) => theme.color.green};
 
         &:hover {
             background-color: hsl(120, 100%, 30%);
