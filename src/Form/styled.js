@@ -23,7 +23,7 @@ export const Button = styled.button`
     transition: 0.3s;
 
     &:hover {
-        background-color: hsl(180, 100%, 30%);
+        filter: brightness(110%);
         transform: scale(1.1);
     }
 `;
