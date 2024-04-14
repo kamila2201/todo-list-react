@@ -8,12 +8,15 @@ This website is very useful when you want to create to-do list. You can add task
 
 - React
 - HTML
-- CSS with BEM convention
+- CSS
 - JavaScript
 - MediaQueries
 - Grid
 - Flex
 - Immutability
+- LocalStorage
+- Styled Components
+- Custom Hooks
 
 ## Check it out!
 
