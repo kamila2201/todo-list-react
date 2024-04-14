@@ -17,8 +17,8 @@ export const Input = styled.input`
 
 export const Button = styled.button`
     padding: 10px;
-    color: #fff;
-    background-color: ${({ theme }) => theme.color.teal};;
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.teal};
     border: none;
     transition: 0.3s;
 
