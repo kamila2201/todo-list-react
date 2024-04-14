@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
     margin: 10px 0;
-    background-color: #fff;
-    -webkit-box-shadow: 0px 0px 0px 3px ${({ theme }) => theme.color.silver};
-    -moz-box-shadow: 0px 0px 0px 3px ${({ theme }) => theme.color.silver};
+    background-color: ${({ theme }) => theme.color.white};
     box-shadow: 0px 0px 0px 3px ${({ theme }) => theme.color.silver};
 `;
 
